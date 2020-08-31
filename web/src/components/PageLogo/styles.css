@@ -1,0 +1,28 @@
+.logo {
+  background-color: var(--color-primary);
+  background-image: url("../../assets/images/background-login.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 50%;
+}
+
+.logo > .content-logo > img {
+  width: 100%;
+}
+.logo > .content-logo {
+  max-width: 30rem;
+}
+
+.logo > .content-logo > p {
+  color: var(--color-text-in-primary);
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  margin-top: 0.8rem;
+}

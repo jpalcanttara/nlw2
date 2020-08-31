@@ -1,0 +1,193 @@
+#box-login {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+#box-login > .login {
+  background-color: var(--color-background);
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-block-login {
+  position: relative;
+}
+
+.input-block-login label {
+  font-size: 1.4rem;
+  position: absolute;
+  bottom: 1.8rem;
+  left: 1.6rem;
+  color: var(--color-text-complement);
+  transition: all 0.2s;
+}
+
+.form-login .input-block-login input {
+  width: 100%;
+  height: 6.6rem;
+  background: var(--color-input-background);
+  border: 1px solid var(--color-line-in-white);
+  outline: 0;
+  padding: 1.6rem 1.6rem 0;
+  font: 1.6rem;
+}
+
+.form-login form fieldset .input-block-login .first {
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+.form-login form fieldset .input-block-login .last {
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+}
+
+.input-block-login:focus-within::after {
+  width: 2px;
+  height: calc(100% - 2.4rem);
+  content: "";
+  background: var(--color-primary-light);
+  position: absolute;
+  left: 0rem;
+  bottom: 1.2rem;
+}
+
+.input-block-login:focus-within label {
+  font-size: 1.2rem;
+  bottom: 3.8rem;
+}
+
+.onValue {
+  font-size: 1.2rem !important;
+  bottom: 3.8rem !important;
+}
+
+.form-login fieldset {
+  border: 0;
+  padding: 0 2.4rem;
+  width: 356px;
+  margin-bottom: 3.6rem;
+}
+
+.form-login form fieldset legend {
+  color: var(--color-text-title);
+  font-size: 3.6rem;
+  line-height: 6.6rem;
+  font-weight: 700;
+}
+
+#box-login .login footer {
+  width: 50%;
+  position: absolute;
+  height: 10rem;
+  display: flex;
+  align-items: initial;
+  justify-content: space-evenly;
+  bottom: 0;
+}
+
+#box-login .login footer > p {
+  max-width: 16rem;
+}
+
+#box-login .login footer > p > a {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+#box-login .login footer > span {
+  font-size: 1.4rem;
+  color: var(--color-text-complement);
+}
+
+.input-block-login > img {
+  position: absolute;
+  bottom: 1.6rem;
+  right: 1.6rem;
+  cursor: pointer;
+}
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+.form-login input[type="submit"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--color-secundary);
+  border: 0;
+  padding: 1.6rem;
+  color: var(--color-button-text);
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.6rem Archivo;
+  margin-top: 3.6rem;
+}
+
+.form-login input[type="submit"]:hover {
+  background-color: var(--color-secundary-dark);
+}
+
+.form-login .more-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2.4rem 0;
+}
+
+.check-box {
+  display: flex;
+  align-items: center;
+}
+
+.check-box > label {
+  color: var(--color-text-complement);
+  font-size: 1.4rem;
+  padding-left: 1.6rem;
+}
+
+.more-info > a {
+  font-size: 1.4rem;
+  color: var(--color-text-complement);
+  text-decoration: none;
+}
+
+.more-info .check-box > input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  border: 1px solid #cacece;
+  width: 24px;
+  height: 24px;
+  border-radius: 0.8rem;
+  appearance: none;
+}
+
+.more-info .check-box > input:checked {
+  border: 0;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-color: var(--color-secundary);
+}
+
+.more-info .check-box > input:active,
+.more-info .check-box > input:focus,
+.more-info .check-box > input:checked:active {
+  box-shadow: none;
+  outline: none;
+}
+
+.more-info .check-box > input:checked:after {
+  content: "\2714";
+  font-size: 14px;
+  color: var(--color-button-text);
+}
